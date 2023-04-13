@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-
+import About from "./Pages/About";
+import MainPage from "./Pages/MainPage";
+import Projects from "./Pages/Projects";
+import WorkExperience from "./Pages/WorkExperience";
+import logo from "./logo.svg";
+// import './App.css';
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Parallax pages={5} className="flex flex-col gap-1 bg-bgColor">
+        <ParallaxLayer offset={0} speed={0.3}>
+          <MainPage />
+        </ParallaxLayer>
+        <ParallaxLayer offset={1} speed={0.8}>
+          <WorkExperience />
+        </ParallaxLayer>
+        <ParallaxLayer offset={2} speed={0.3}>
+          <About />
+        </ParallaxLayer>
+        <ParallaxLayer offset={3} speed={0.3}>
+          <Projects />
+        </ParallaxLayer>
+      </Parallax>
     </div>
   );
 }
