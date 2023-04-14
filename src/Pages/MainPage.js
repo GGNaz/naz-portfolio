@@ -54,11 +54,6 @@ function MainPage() {
           </div>
         </div>
       </div>
-      <div className="fixed bottom-7 right-7">
-        <button className=" p-2 bg-darkgray rounded-md">
-          <FiIcons.FiMail />
-        </button>
-      </div>
     </div>
   );
 }

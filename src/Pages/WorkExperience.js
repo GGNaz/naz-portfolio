@@ -23,7 +23,7 @@ function WorkExperience() {
   // desingDots();
 
   return (
-    <div className="flex flex-col p-5 ">
+    <div className="flex flex-col p-5 gap-4">
       <div className="absolute p-5 top-5 right-5 text-white">
         {/* {
           mapdots.map(() => (
@@ -31,7 +31,7 @@ function WorkExperience() {
           ))
         } */}
       </div>
-      <div className="flex justify-center text-3xl font-bold text-white">
+      <div className="flex justify-center text-5xl font-bold text-white">
         Work Experience
       </div>
       <div className="grid md:grid-cols-2 grid-cols-1">
